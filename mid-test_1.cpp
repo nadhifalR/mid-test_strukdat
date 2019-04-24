@@ -61,9 +61,9 @@ void traversal(node* head){
 void update(node* head){
     node* p=head;
 
-    while(head != NULL){
+    while(p != NULL){
+        cout<<"Jumlah Pesanan untuk menu "<<p->makanan<<" : ";cin>>p->jumlah;
         p=p->next;
-        cout<<"Jumlah Pesanan untuk menu "<<p->jumlah<<" : ";cin>>p->jumlah;
     }
 }
 
@@ -108,7 +108,8 @@ main(){
     }
     traversal(head);
 
+    cout<<"Update Jumlah makanan"<<endl;
     update(head);
-    sortingByjumlah(head);
+    //sortingByjumlah(head);
     traversal(head);
 }
