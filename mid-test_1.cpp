@@ -110,6 +110,6 @@ main(){
 
     cout<<"Update Jumlah makanan"<<endl;
     update(head);
-    //sortingByjumlah(head);
+    sortingByjumlah(head);
     traversal(head);
 }
